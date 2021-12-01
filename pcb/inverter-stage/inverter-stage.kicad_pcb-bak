@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 14)
-    (tracks 174)
+    (tracks 176)
     (zones 0)
     (modules 30)
     (nets 44)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "gerber/"))
   )
 
   (net 0 "")
@@ -1658,7 +1658,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 61A6E8F2)
+  (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 61A71FB0)
     (at 105 31)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
@@ -2354,6 +2354,9 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
 
+  (segment (start 134 55.078) (end 136.958 58.036) (width 0.25) (layer B.Cu) (net 1))
+  (segment (start 140.592 58.036) (end 140.97 57.658) (width 0.25) (layer B.Cu) (net 1))
+  (segment (start 136.958 58.036) (end 140.592 58.036) (width 0.25) (layer B.Cu) (net 1))
   (segment (start 135.89 31.75) (end 135.25 31.75) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 133.829802 30.329802) (end 130.724999 30.329802) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 135.25 31.75) (end 133.829802 30.329802) (width 0.25) (layer F.Cu) (net 2))
@@ -2369,7 +2372,6 @@
   (segment (start 155.746999 30.746999) (end 154 29) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 138.64 29) (end 135.89 31.75) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 154 29) (end 138.64 29) (width 0.25) (layer F.Cu) (net 2))
-  (segment (start 135.89 31.75) (end 138.25 31.75) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 140.97 66.67) (end 138.3 64) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 140.97 69.088) (end 140.97 66.67) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 138.3 64) (end 132 57.7) (width 0.25) (layer B.Cu) (net 2))
@@ -2529,7 +2531,7 @@
   (segment (start 179.562 75.438) (end 181.864 75.438) (width 0.25) (layer F.Cu) (net 43))
   (segment (start 178.292 76.708) (end 179.562 75.438) (width 0.25) (layer F.Cu) (net 43))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 61A70C32) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 61A7212F) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
